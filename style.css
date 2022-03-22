@@ -1,0 +1,244 @@
+* {
+    padding: 0;
+    margin: 0;
+}
+
+/* header */
+
+ul {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+    color: white;
+}
+
+li a:hover {
+    color: #cfc7c7;
+}
+
+.header-bg {
+    background-color: #C0293A;
+    padding: 25px;
+}
+
+.logo {
+    max-width: 145px;
+}
+
+.flex-nav, .flex-ul {
+    display: flex;
+    flex-wrap: wrap;
+    flex: 0 1 auto;
+    justify-content: space-between;
+}
+
+.flex-ul {
+    align-items: center;
+    margin-right: 40px;
+    gap: 42px;
+    font-family:'Nunito Sans', sans-serif;
+    font-weight: 700;
+    font-size: 0.975rem;
+}
+
+.entrar {
+    background-color: rgba(173, 25, 42, .5);
+    padding: 11px 25px;
+    border-radius: 8px;
+}
+
+
+/* inicio */
+
+.article-bg {
+    background-color: #E5EBEB;
+    padding: 40px;
+}
+
+main article, .logo {
+    margin-left: 30px;
+}
+
+article {
+    margin-top: 64px;
+}
+
+article h1, article h2, #pizzas h3 {
+    font-family: 'Merriweather', serif;
+    font-weight: bold;
+}
+
+article h1 {
+    font-size: 3.5rem;
+}
+
+article strong {
+    color: #CE3C4D;
+}
+
+article h2 {
+    font-size: 2.2rem;
+}
+
+.linha1 {
+    content: '';
+    width: 70px;
+    height: 3px;
+    background-color: #CE3C4D;
+    border-radius: 2px;
+    margin-bottom: 32px;
+}
+
+article p, .pedir, .populares-bg h2  {
+    font-family: 'Nunito Sans', sans-serif;
+}
+
+article p {
+    font-size: 1rem;
+    color: #3A3A3A;
+    margin-top: 25px;
+}
+
+.pedir {
+    display: block;
+    max-width: 150px;
+    background-color: #008D44;
+    color: white;
+    box-shadow: 2px 2px 4px #09360052;
+    font-size: 1.3rem;
+    font-weight: bold;
+    padding: 15px 50px;
+    border-radius: 10px;
+    text-align: center;
+    margin-top: 32px;
+}
+
+.pedir:hover {
+    background-color: #0f9b53;
+}
+
+.foto-pizza {
+    width: 85%;
+    margin-left: 64px;
+    margin-top: 32px;
+}
+
+.grid-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    align-items: center;
+    padding-bottom: 120px;
+}
+
+
+/* populares */
+
+.populares-bg {
+    background-color: #EAEEE8;
+    margin: 0 auto;
+    padding: 30px;
+}
+
+.populares-bg h2 {
+    display: flex;
+    color: #2B2927;
+    justify-content: center;
+    margin-bottom: 16px;
+    margin-top: 36px;
+
+}
+
+.flex-pop {
+    display: flex;
+    margin: 0 auto;
+    justify-content: center;
+    gap: 32px;
+    margin-bottom: 32px;
+}
+
+.circulo {
+    content: '';
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    border: 1px solid #2B2927;
+}
+
+.circulo1 {
+    background-color: #008D44;
+}
+
+.circulo1:hover {
+    background-color: #077c40;
+}
+
+.circulo2 {
+    background-color: white;
+}
+
+.circulo2:hover {
+    background-color: rgb(230, 223, 223);
+}
+
+.circulo3 {
+    background-color: #CE3C4D;
+}
+
+.circulo3:hover {
+    background-color: #a52534;
+}
+
+.linha2, .linha3 {
+    content: '';
+    width: 90px;
+    height: 3px;
+    display: block;
+    border-radius: 2px;
+    background-color: #008D44;
+}
+
+.linha2 {
+    margin: 0 auto;
+    margin-bottom: 74px;
+}
+
+
+#pizzas {
+    display: grid;
+    grid-template-columns: minmax(100px, 220px) 1fr;
+    gap: 50px;
+    justify-content: space-between;
+}
+
+
+.container-pizza img {
+    max-width: 230px;
+    max-height: 230px;
+    border-radius: 50%;
+    border: 1px solid #3A3A3A;
+    margin-left: 120px;
+}
+
+.container-descricao {
+    margin: 0 auto;
+}
+
+#pizzas {
+    padding-bottom: 42px;
+}
+
+#pizzas h3 {
+    font-size: 2.2rem;
+}
+
+#pizzas p {
+    font-size: 1.2rem;
+}
+
+.linha3 {
+    margin-top: 15px;
+    margin-bottom: 36px;
+}
+ 

@@ -99,6 +99,7 @@ article p {
     font-size: 1rem;
     color: #3A3A3A;
     margin-top: 25px;
+    max-width: 100ch;
 }
 
 .pedir {
@@ -208,8 +209,10 @@ article p {
 #pizzas {
     display: grid;
     grid-template-columns: minmax(100px, 220px) 1fr;
-    gap: 50px;
+    gap: 100px;
     justify-content: space-between;
+    align-items: center;
+    margin-top: 64px;
 }
 
 
@@ -223,6 +226,10 @@ article p {
 
 .container-descricao {
     margin: 0 auto;
+}
+
+.container-descricao p {
+    max-width: 65ch;
 }
 
 #pizzas {

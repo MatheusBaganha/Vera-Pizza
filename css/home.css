@@ -1,0 +1,141 @@
+.article-bg {
+    background-color: #E5EBEB;
+    padding: 40px;
+    margin-left: -13px;
+}
+
+main article, .logo {
+    margin-left: 30px;
+}
+
+article {
+    margin-top: 64px;
+}
+
+article h1, article h2, #pizzas h3 {
+    font-family: 'Merriweather', serif;
+    font-weight: bold;
+}
+
+article h1 {
+    font-size: 3.5rem;
+}
+
+article strong {
+    color: #CE3C4D;
+}
+
+article h2 {
+    font-size: 2.2rem;
+}
+
+.linha1 {
+    content: '';
+    width: 70px;
+    height: 3px;
+    background-color: #CE3C4D;
+    border-radius: 2px;
+    margin-bottom: 32px;
+}
+
+article p, .pedir, .populares-bg h2, .local-bg h3, .local-bg p, footer {
+    font-family: 'Nunito Sans', sans-serif;
+}
+
+article p {
+    font-size: 1rem;
+    color: #3A3A3A;
+    margin-top: 25px;
+    max-width: 100ch;
+}
+
+.pedir {
+    display: block;
+    max-width: 150px;
+    background-color: #008D44;
+    color: white;
+    box-shadow: 2px 2px 4px #09360052;
+    font-size: 1.3rem;
+    font-weight: bold;
+    padding: 15px 50px;
+    border-radius: 10px;
+    text-align: center;
+    margin-top: 32px;
+}
+
+.pedir:hover {
+    background-color: #0f9b53;
+}
+
+.foto-pizza {
+    width: 80%;
+    margin-left: 82px;
+    margin-top: 32px;
+}
+
+.grid-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    align-items: center;
+    padding-bottom: 120px;
+}
+
+
+@media (max-width: 1060px) {
+    .grid-container {
+        grid-template-columns: 1fr;
+    }   
+
+    .foto-pizza {
+        display: none;
+    }
+
+    article p {
+        max-width: 50ch;
+    }
+}
+
+
+
+@media (max-width: 565px) {
+    article h1 {
+        font-size: 2.5rem;
+    }
+    
+    article h2 {
+        font-size: 1.8rem;
+    }
+
+    .pedir {
+        font-size: 1.2rem;
+    }
+}
+
+@media (max-width: 479px) { 
+    article h2 {
+        font-size: 1.3rem;
+    }
+
+    article p {
+        font-size: 0.8rem;
+    }
+}
+
+@media (max-width: 373px) {
+    article h2 {
+        font-size: 1rem;
+    }
+
+    article p {
+        font-size: 0.7rem;
+    }
+}
+
+@media (max-width: 330px) {
+    .pedir {
+        padding: 10px 20px;
+        font-size: 1rem;
+    }
+
+
+}

@@ -1,0 +1,97 @@
+/* localizacao */
+
+.local-bg {
+    background-color: #E5EBEB;
+    padding: 30px;
+}
+
+.local-titulo {
+    display: block;
+    margin-top: 32px;
+    margin-bottom: 110px;
+}
+
+.local-titulo h3 {
+    text-align: center;
+    font-weight: bold;
+    font-size: 2rem;
+    margin-bottom: 12px;
+}
+
+.local {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    justify-content: space-between;
+    align-items: center;
+    gap: 148px;
+    padding-bottom: 64px;
+
+}
+
+
+.local p {
+    font-size: 1.2rem;
+    color: rgb(20, 20, 20);
+}
+
+
+.mapa {
+    max-width: 500px;
+    margin-left: 128px;
+}
+
+
+.linha4 {
+    margin: 0 auto;
+}
+
+.linha5 {
+    width: 50px;
+    margin: 32px 0;
+}
+
+
+@media (max-width: 1060px) {
+    .local {
+        grid-template-columns: 1fr;
+        justify-content: center;
+        align-items: center;
+        padding-bottom: 50px;
+    
+    }
+    
+    
+    .local p {
+        font-size: 1.2rem;
+    }
+
+    .local div {
+        margin: 0;
+    }
+    
+    
+    .mapa {
+        max-width: 500px;
+        margin: 0;
+    }
+
+    
+}
+
+@media (max-width: 565px) {
+
+}
+
+@media (max-width: 479px) { 
+    
+}
+
+@media (max-width: 373px) {
+   
+}
+
+@media (max-width: 330px) {
+
+
+}
+ 

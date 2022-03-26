@@ -1,0 +1,162 @@
+/* populares */
+
+.populares-bg {
+    background-color: #EAEEE8;
+    margin: 0 auto;
+    padding: 30px;
+}
+
+.populares-bg h2 {
+    display: flex;
+    color: #2B2927;
+    justify-content: center;
+    margin-bottom: 16px;
+    margin-top: 36px;
+
+}
+
+.flex-pop {
+    display: flex;
+    margin: 0 auto;
+    justify-content: center;
+    gap: 32px;
+    margin-bottom: 32px;
+}
+
+.circulo {
+    content: '';
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    border: 1px solid #2B2927;
+}
+
+.circulo1 {
+    background-color: #008D44;
+}
+
+.circulo1:hover {
+    background-color: #077c40;
+}
+
+.circulo2 {
+    background-color: white;
+}
+
+.circulo2:hover {
+    background-color: rgb(230, 223, 223);
+}
+
+.circulo3 {
+    background-color: #CE3C4D;
+}
+
+.circulo3:hover {
+    background-color: #a52534;
+}
+
+.linha2, .linha3, .linha4, .linha5 {
+    content: '';
+    width: 90px;
+    height: 3px;
+    display: block;
+    border-radius: 2px;
+    background-color: #008D44;
+}
+
+.linha2 {
+    margin: 0 auto;
+    margin-bottom: 74px;
+}
+
+
+#pizzas {
+    display: grid;
+    grid-template-columns: minmax(100px, 220px) 1fr;
+    gap: 100px;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 64px;
+}
+
+
+.container-pizza img {
+    max-width: 300px;
+    margin-left: 70px;
+}
+
+.container-descricao {
+    margin: 0 auto 0 164px;
+}
+
+
+#pizzas {
+    padding-bottom: 42px;
+}
+
+#pizzas h3 {
+    font-size: 2.2rem;
+}
+
+#pizzas p {
+    font-size: 1.2rem;
+    max-width: 65ch;
+
+}
+
+.linha3 {
+    margin-top: 12px;
+    margin-bottom: 36px;
+}
+
+
+@media (max-width: 1060px) {
+    #pizzas {
+        grid-template-columns: 1fr;
+    }
+
+    .container-pizza img {
+        display: none;
+    }
+
+    #pizzas {
+        justify-content: center;
+        margin-top: 64px;
+    }
+
+    #pizzas p {
+        max-width: 50ch;
+    }
+    
+    .container-descricao {
+        margin: 0 auto;
+    }
+}
+
+@media (max-width: 565px) {
+    #pizzas p {
+        font-size: 1rem;    
+    }
+}
+
+@media (max-width: 1060px) {
+
+}
+
+@media (max-width: 565px) {
+
+}
+
+@media (max-width: 479px) { 
+    
+}
+
+@media (max-width: 373px) {
+   
+}
+
+@media (max-width: 330px) {
+
+
+}
+ 

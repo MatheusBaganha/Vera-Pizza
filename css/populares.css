@@ -1,9 +1,12 @@
 /* populares */
 
 .populares-bg {
+    display: grid;
     background-color: #EAEEE8;
     margin: 0 auto;
     padding: 30px;
+    justify-content: center;
+
 }
 
 .populares-bg h2 {
@@ -66,7 +69,7 @@
 
 .linha2 {
     margin: 0 auto;
-    margin-bottom: 74px;
+    margin-bottom: 72px;
 }
 
 
@@ -91,7 +94,7 @@
 
 
 #pizzas {
-    padding-bottom: 42px;
+    padding-bottom: 64px;
 }
 
 #pizzas h3 {
@@ -109,6 +112,17 @@
     margin-bottom: 36px;
 }
 
+
+@media (min-width: 1500) {
+    .container-pizza img {
+        margin: 0 auto;
+    }
+
+    .container-descricao {
+        justify-items: center;
+        margin: 0 auto;
+    }
+}
 
 @media (max-width: 1060px) {
     #pizzas {
@@ -130,6 +144,16 @@
     
     .container-descricao {
         margin: 0 auto;
+    }
+}
+
+@media (max-width: 700px) {
+    #pizzas {
+        margin-top: 28px;
+    }
+
+    .linha2 {
+        margin-bottom: 0px;
     }
 }
 

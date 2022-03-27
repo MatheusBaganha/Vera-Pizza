@@ -17,20 +17,20 @@ footer {
 
 
 .footer-nav h3 {
-    color: #E2E2E2;
+    color: #ffffff;
     margin-bottom: 12px;
     
 }
 
 .footer-nav p, .footer-nav li, .linha-footer a {
-    color: #E4D4D4;
+    color: #ebebeb;
     margin-bottom: 12px;
 }
 
 
 
 .linha-footer a:hover {
-    color: #ffffff;
+    color: #cfcfcf;
 }
 
 
@@ -38,7 +38,7 @@ footer {
     display: block;
     text-align: center;
     margin-bottom: -12px;
-    color: #E4D4D4;
+    color: #ebebeb;
 }
 
 .linha-footer {
@@ -58,7 +58,10 @@ footer {
 .rede-social {
     display: flex;
     gap: 12px;
+    align-items: center;
 }
+
+
 
 
 @media (max-width: 1060px) {

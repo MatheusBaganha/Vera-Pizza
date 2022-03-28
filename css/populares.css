@@ -12,6 +12,8 @@
 .populares-bg h2 {
     display: flex;
     color: #2B2927;
+    font-size: 2rem;
+    font-weight: bold;
     justify-content: center;
     margin-bottom: 16px;
     margin-top: 36px;

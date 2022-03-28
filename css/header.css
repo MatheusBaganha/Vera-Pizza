@@ -18,8 +18,12 @@ li a:hover {
     padding: 30px;
 }
 
-.logo {
+.logo img {
     max-width: 145px;
+}
+
+a.logo {
+    display: block;
 }
 
 .flex-nav, .flex-ul {
@@ -27,10 +31,10 @@ li a:hover {
     flex-wrap: wrap;
     flex: 0 1 auto;
     justify-content: space-between;
+    align-items: center;
 }
 
 .flex-ul {
-    align-items: center;
     margin-right: 40px;
     gap: 42px;
     font-family:'Nunito Sans', sans-serif;
@@ -44,4 +48,110 @@ li a:hover {
     border-radius: 8px;
 }
 
+[data-btnMenu] {
+    display: none;
+    width: 32px;
+    height: 32px;
+    padding: 12px;
 
+}
+
+/* menu mobile */
+
+@media (max-width: 800px) {
+    [data-btnMenu] {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        cursor: pointer;
+        border-radius: 3px;
+        border: none;
+        padding: 15px;
+        background-color: #ac2333;
+    }
+
+    [data-btnMenu] span {
+        display: block;
+        border-top: 2px solid #fff;
+        width: 20px;
+        border-radius: 2px;
+    }
+
+    [data-btnMenu] span::after, [data-btnMenu] span::before {
+        content: '';
+        display: block;
+        width: 20px;
+        height: 2px;
+        margin-top: 5px;
+        background-color: #fff;
+        border-radius: 2px;
+        transition: .3s;
+        position: relative;
+    }
+
+    [data-nav].aberto .icone-menu { 
+        border-top-color: transparent;
+    }
+
+    [data-nav].aberto .icone-menu::before {
+        transform: rotate(135deg);
+    }
+
+    [data-nav].aberto .icone-menu::after {
+        transform: rotate(-135deg);
+        top: -7px;
+
+    }
+
+    [data-itens] {
+        display: block;
+        position: absolute;
+        width: 100%;
+        height: 0px;
+        transition: .6s;
+        top: 92px;
+        left: 0px;
+        background-color: #C0293A;
+        padding-left: 32px;
+        padding-bottom: 16px;
+        box-sizing: border-box;
+        z-index: 1000;
+        visibility: hidden;
+        overflow-y: hidden;
+    }
+
+    [data-nav].aberto [data-itens] {
+        padding-top: 16px;
+        height: calc(100vh - 92px);
+        visibility: visible;
+        overflow-y: auto;
+    }
+
+    
+
+
+
+
+    .header-bg {
+        padding: 30px 30px 30px 16px;
+    }
+
+    .flex-ul li a {
+        display: block;
+        padding: 16px 0;
+        margin: 0 16px;
+        border-bottom: 1px solid #b42435;
+        border-radius: 0;
+    }
+
+
+    #entrar {
+        background-color: transparent;
+        padding: 16px 0;
+    }
+
+    
+   
+
+}
+ 

@@ -12,15 +12,16 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <header class="header-bg">
-        <nav class="flex-nav">
-            <img class="logo" src="svg/Pizzaria.svg" alt="Logo da pizzaria">
-            <ul class="flex-ul"> 
+    <header class="header-bg flex-nav">
+        <a class="logo logo-header" href="index.html"><img src="svg/Pizzaria.svg" alt="Logo da pizzaria"></a>
+        <nav data-nav>
+            <button data-btnMenu aria-label="Abrir Menu" aria-haspopup="true" aria-controls="menu" aria-expanded="false"><span class="icone-menu"></span></button>
+            <ul id="menu" class="flex-ul" data-itens role="menu">  
                 <li><a href="">Home</a></li>
                 <li><a href="">Cardápio</a></li>
                 <li><a href="">Dúvidas</a></li>
                 <li><a href="">Contato</a></li>
-                <li><a class="entrar" href="">Entrar</a></li>
+                <li><a id="entrar" class="entrar" href="">Entrar</a></li>
             </ul>
         </nav>
     </header>
@@ -103,6 +104,6 @@
         <p class="copy">© Pizzaria. Matheus Baganha.</p>
     </footer>
 
-
+    <script type="module" src="script.js"></script>
 </body>
 </html>

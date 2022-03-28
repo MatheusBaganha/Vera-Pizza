@@ -12,10 +12,7 @@ article {
     margin-top: 64px;
 }
 
-article h1, article h2, #pizzas h3 {
-    font-family: 'Merriweather', serif;
-    font-weight: bold;
-}
+
 
 article h1 {
     font-size: 3.5rem;
@@ -29,18 +26,6 @@ article h2 {
     font-size: 2.2rem;
 }
 
-.linha1 {
-    content: '';
-    width: 70px;
-    height: 3px;
-    background-color: #CE3C4D;
-    border-radius: 2px;
-    margin-bottom: 32px;
-}
-
-article p, .pedir, .populares-bg h2, .local-bg h3, .local-bg p, footer {
-    font-family: 'Nunito Sans', sans-serif;
-}
 
 article p {
     font-size: 1rem;

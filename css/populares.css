@@ -9,7 +9,7 @@
 
 }
 
-.populares-bg h2 {
+#populares-h2 {
     display: flex;
     color: #2B2927;
     font-size: 2rem;
@@ -17,7 +17,6 @@
     justify-content: center;
     margin-bottom: 16px;
     margin-top: 36px;
-
 }
 
 .flex-pop {
@@ -60,19 +59,8 @@
     background-color: #a52534;
 }
 
-.linha2, .linha3, .linha4, .linha5 {
-    content: '';
-    width: 90px;
-    height: 3px;
-    display: block;
-    border-radius: 2px;
-    background-color: #008D44;
-}
 
-.linha2 {
-    margin: 0 auto;
-    margin-bottom: 72px;
-}
+
 
 
 #pizzas {
@@ -109,10 +97,6 @@
 
 }
 
-.linha3 {
-    margin-top: 12px;
-    margin-bottom: 36px;
-}
 
 
 @media (min-width: 1500) {
@@ -165,24 +149,4 @@
     }
 }
 
-@media (max-width: 1060px) {
-
-}
-
-@media (max-width: 565px) {
-
-}
-
-@media (max-width: 479px) { 
-    
-}
-
-@media (max-width: 373px) {
-   
-}
-
-@media (max-width: 330px) {
-
-
-}
  

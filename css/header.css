@@ -56,6 +56,12 @@ a.logo {
 
 }
 
+
+
+
+
+
+
 /* menu mobile */
 
 @media (max-width: 800px) {
@@ -74,7 +80,6 @@ a.logo {
         display: block;
         border-top: 2px solid #fff;
         width: 20px;
-        border-radius: 2px;
     }
 
     [data-btnMenu] span::after, [data-btnMenu] span::before {

@@ -6,3 +6,61 @@
 body {
     background-color: #E5EBEB;
 }
+
+
+/* TIPOGRAFIA */
+
+
+article h1, article h2, #pizzas h3 {
+    font-family: 'Merriweather', serif;
+    font-weight: bold;
+}
+
+article p, .pedir, .populares-bg h2, .local-bg h3, .local-bg p, footer {
+    font-family: 'Nunito Sans', sans-serif;
+}
+
+
+
+/* Linhas */
+
+
+.linha1 {
+    content: '';
+    width: 70px;
+    height: 3px;
+    background-color: #CE3C4D;
+    border-radius: 2px;
+    margin-bottom: 32px;
+}
+
+.linha2, .linha3, .linha4, .linha5 {
+    content: '';
+    width: 90px;
+    height: 3px;
+    display: block;
+    border-radius: 2px;
+    background-color: #008D44;
+}
+
+
+.linha4 {
+    margin: 0 auto;
+}
+
+.linha5 {
+    width: 50px;
+    margin: 32px 0;
+}
+
+
+
+.linha2 {
+    margin: 0 auto;
+    margin-bottom: 72px;
+}
+
+.linha3 {
+    margin-top: 12px;
+    margin-bottom: 36px;
+}

@@ -43,6 +43,9 @@ article p, .pedir, .populares-bg h2, .local-bg h3, .local-bg p, footer {
     background-color: #008D44;
 }
 
+.linha2 {
+    width: 50px;
+}
 
 .linha4 {
     margin: 0 auto;

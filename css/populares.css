@@ -71,16 +71,34 @@
     justify-content: space-between;
     align-items: center;
     margin-top: 64px;
+    transform: translateX(-30px);
 }
 
 
 .container-pizza img {
     max-width: 300px;
     margin-left: 70px;
+    filter: drop-shadow(3px 3px 10px rgba(0, 0, 0, 0.349));
 }
 
 .container-descricao {
     margin: 0 auto 0 164px;
+    
+}
+
+.animar {
+    animation: slide .3s forwards;
+}
+
+@keyframes slide {
+    from {
+        opacity: 0;
+    }
+
+    to {
+        opacity: 1;
+        transform: translateX(0);  
+    }
 }
 
 
@@ -97,6 +115,7 @@
     max-width: 65ch;
 
 }
+
 
 
 

@@ -32,8 +32,10 @@
             <div class="linha1"></div>
             <h2>A verdadeira <strong>pizza italiana</strong><br> preparada para você<br> com amor.</h2>
             <p>A pizza é um prato de origem italiana que consiste em uma base geralmente redonda e plano de massa fermentada coberta com tomate, queijo e outros ingredientes, que é então assada em forno a lenha.</p>
-            <a href="#" class="pedir">PEDIR AGORA</a>
+            <a data-pedir href="#" class="pedir">PEDIR AGORA</a>
+            
         </article>
+        
         <div>
             <img class="foto-pizza" src="img/Cheese-Pizza.png" alt="Cheese-Pizza">
         </div>
@@ -104,6 +106,37 @@
         <p class="copy">© Pizzaria. Matheus Baganha.</p>
     </footer>
 
+    <section data-modal class="container-modal">
+        <div class="container-formulario">
+            <button data-fechar id="botao-fechar">X</button>
+            <h2 class="titulo-form">FAÇA SEU PEDIDO</h2>
+            <form id="formulario" action="#" method="post">
+                <div>
+                    <label for="nome">Nome</label>
+                    <input type="text" name="nome" id="nome">
+                </div>
+            
+                <div>
+                    <label for="rua">Rua</label>
+                    <input type="text" name="rua" id="rua">
+                </div>
+
+                <div>
+                    <label for="numero">Número</label>
+                    <input type="number" name="numero" id="numero">
+                </div>
+
+                <div>
+                    <label for="email">Email</label>
+                    <input type="email" name="email" id="email">
+                </div>
+
+                <div>
+                    <button id="finalizar-pedido" type="submit">FINALIZAR PEDIDO</button>
+                </div>
+            </form>
+        </div>
+    </section>
     <script type="module" src="script.js"></script>
 </body>
 </html>

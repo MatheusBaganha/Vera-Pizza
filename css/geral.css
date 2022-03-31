@@ -11,12 +11,12 @@ body {
 /* TIPOGRAFIA */
 
 
-article h1, article h2, #pizzas h3 {
+article h1, article h2, #pizzas h3, .titulo-form {
     font-family: 'Merriweather', serif;
     font-weight: bold;
 }
 
-article p, .pedir, .populares-bg h2, .local-bg h3, .local-bg p, footer {
+article p, .pedir, .populares-bg h2, .local-bg h3, .local-bg p, footer, .container-modal label, #botao-fechar, #finalizar-pedido {
     font-family: 'Nunito Sans', sans-serif;
 }
 

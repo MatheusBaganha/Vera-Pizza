@@ -1,0 +1,115 @@
+
+.container-modal {
+    background-color: rgba(0, 0, 0, .5);
+    width: 100vw;
+    height: 100vh;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 5000;
+    display: none;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    margin: 0 0 0 0;    
+}
+
+.container-modal.mostrar {
+    display: flex;
+    animation: mostrar .3s ease;
+}
+
+@keyframes mostrar {
+    from {
+        opacity: 0;
+        transform: translateY(50px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.container-formulario {
+    background-color: #E5EBEB;
+    border-radius: 8px;
+    border: 2px solid rgb(199, 199, 199);
+    box-shadow: 3px 3px 5px rgba(0, 0, 0, 0.3);
+    width: 60%;
+    height: 60%;
+    padding: 40px;
+    position: relative;
+
+}
+
+.titulo-form {
+    color: #161616;
+    text-align: center;
+    font-size: 1.5rem;
+    margin-top: -10px;
+}
+
+#formulario label {
+    display: block;
+    font-weight: bold;
+    color: #161616;
+    font-size: 1.1rem;
+    margin-bottom: 5px;
+}  
+
+#formulario label:first-child {
+    margin-top: 16px;
+}
+
+#formulario input {
+    display: block;
+    margin-bottom: 12px;
+    padding: 8px;
+    box-sizing: border-box;
+    border: 1px solid #a8a8a8;
+    border-radius: 3px;
+    outline: none;
+}
+
+
+#numero {
+    max-width: 60px;
+}
+
+
+#botao-fechar {
+    background-color: #f0e9ea;
+    color: #1a1a1a;
+    width: 45px;
+    height: 45px;
+    font-size: 1.2rem;
+    text-align: center;
+    border-radius: 50%;
+    border: 2px solid rgb(199, 199, 199);
+    position: absolute;
+    top: 25px;
+    right: 20px;
+    cursor: pointer;
+}
+
+#botao-fechar:hover {
+    background-color: #c7c7c7;
+}
+
+#botao-fechar:active {
+    background-color: #b9acac;
+}
+
+
+#finalizar-pedido {
+    display: block;
+    padding: 10px 15px;
+    font-weight: bold;
+    text-align: center;
+    font-size: 1rem;
+    border: 1px solid #159252;
+    box-shadow: 2px 2px 3px #00000027;
+    color: #E5EBEB;
+    background-color: #008D44;
+    border-radius: 6px;
+}

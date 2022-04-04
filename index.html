@@ -110,30 +110,35 @@
         <div class="container-formulario">
             <button data-fechar id="botao-fechar">X</button>
             <h2 class="titulo-form">FAÇA SEU PEDIDO</h2>
-            <form id="formulario" action="#" method="post">
-                <div>
-                    <label for="nome">Nome</label>
-                    <input type="text" name="nome" id="nome">
+            <form id="formulario" action="#" method="post"> 
+                <label for="nome">Nome</label>
+                <input type="text" name="nome" id="nome">
+                
+                <label for="rua">Rua</label>
+                <input type="text" name="rua" id="rua">
+                 
+                <label for="numero">Número</label>
+                <input type="number" name="numero" id="numero">
+                
+                <label for="email">Email</label>
+                <input type="email" name="email" id="email">
+                
+                <div class="select-pizza">
+                    <label for="pizza">Pizza</label>
+                    <select name="pizza" id="pizza">
+                        <option value="calabresa">Calabresa</option>
+                        <option value="portuguesa">Portuguesa</option>
+                        <option value="marguerita">Marguerita</option>
+                    </select>
                 </div>
-            
-                <div>
-                    <label for="rua">Rua</label>
-                    <input type="text" name="rua" id="rua">
-                </div>
+                
+                <button id="finalizar-pedido" type="submit">FINALIZAR</button>
 
-                <div>
-                    <label for="numero">Número</label>
-                    <input type="number" name="numero" id="numero">
+                <div class="container-pizza-escolhida">
+                    <img id="pizza-escolhida" src="img/pizza-calabresa.png" alt="Cheese-Pizza">
+                    <p>R$ 39,99</p>
                 </div>
-
-                <div>
-                    <label for="email">Email</label>
-                    <input type="email" name="email" id="email">
-                </div>
-
-                <div>
-                    <button id="finalizar-pedido" type="submit">FINALIZAR PEDIDO</button>
-                </div>
+                
             </form>
         </div>
     </section>

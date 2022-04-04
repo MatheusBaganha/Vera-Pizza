@@ -16,7 +16,7 @@ article h1, article h2, #pizzas h3, .titulo-form {
     font-weight: bold;
 }
 
-article p, .pedir, .populares-bg h2, .local-bg h3, .local-bg p, footer, .container-modal label, #botao-fechar, #finalizar-pedido {
+article p, .pedir, .populares-bg h2, .local-bg h3, .local-bg p, footer, .container-modal label, #botao-fechar, #finalizar-pedido, #pizza, #formulario input, .container-pizza-escolhida p {
     font-family: 'Nunito Sans', sans-serif;
 }
 

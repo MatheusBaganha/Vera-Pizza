@@ -57,7 +57,11 @@
     flex: 1 1 auto;
     flex-direction: column;
     margin-top: 16px;
+    position: relative;
 }
+
+
+
 
 #formulario label {
     display: block;
@@ -126,28 +130,87 @@
     cursor: pointer;
 }
 
-.container-pizza-escolhida {
-    /* display: block; */
+.container-pizza-escolhida, .aviso {
     display: none;
 }
 
-.container-pizza-escolhida p {
-    position: absolute;
-    font-size: 1.5rem;
-    font-weight: bold;
-    color: #045a2d;
-    top: 332px;
-    right: 320px;
+
+@media (max-width: 1199px) {
+    .aviso {
+        display: block;
+        font-size: 0.8rem;
+        margin: auto;
+    }
+}
+
+@media (min-width: 1200px) {
+
+    .container-pizza-escolhida {
+        display: block;
+        position: relative;
+        padding-left: 100px;
+        box-sizing: border-box;
+        margin-top: 32px;
+    }
+
+    .container-pizza-escolhida, .aviso {
+        margin-right: 35px;
+    }
+
+    .preco {
+        color: #1baf63;
+        font-size: 1.5rem;
+        font-weight: bold;
+        position: absolute;
+        bottom: 160px;
+        right: 340px;
+        margin: 6px 0;
+
+    }
+
+    .linha-preco {
+        content: '';
+        display: block;
+        width: 50px;
+        height: 2px;
+        position: absolute;
+        bottom: 200px;
+        right: 390px;
+        margin: 12px 0 6px 0;
+
+        background-color: #65f5ab;
+    }
+
+
+
+    .aviso {
+        display: block;
+        position: absolute;
+        bottom: 110px;
+        right: 50px;
+        color: #3d3a3a;
+        font-size: 0.9rem;
+        max-width: 50ch;
+
+    }
+
+    #pizza-escolhida {
+        display: block;
+        position: absolute;
+        max-width: 330px;
+        filter: drop-shadow(2px 2px 10px rgba(0, 0, 0, 0.349));
+        bottom: 230px;
+        right: 124px;
+        margin-bottom: 12px;
+    }
+
 }
 
 
-#pizza-escolhida {
-    position: absolute;
-    max-width: 300px;
-    filter: drop-shadow(2px 2px 10px rgba(0, 0, 0, 0.349));
-    top: 120px;
-    right: 130px;
-}
+
+
+
+
 
 
 
@@ -218,5 +281,11 @@
     .container-formulario {
         padding: 40px 40px 32px 40px;
 
-    }    
+    }   
+    #formulario {
+        margin-top: 13px;
+    } 
+
+    
+
 }

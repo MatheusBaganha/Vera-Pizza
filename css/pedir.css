@@ -37,10 +37,9 @@
     border: 2px solid rgb(199, 199, 199);
     box-shadow: 3px 3px 5px rgba(0, 0, 0, 0.3);
     width: 60%;
-    height: 75%;
-    padding: 40px 40px 64px 40px;
+    height: 60%;
+    padding: 40px 40px 164px 40px;
     position: relative;
-
 }
 
 .titulo-form {
@@ -130,18 +129,13 @@
     cursor: pointer;
 }
 
-.container-pizza-escolhida, .aviso {
+.container-pizza-escolhida {
     display: none;
 }
 
 
-@media (max-width: 1199px) {
-    .aviso {
-        display: block;
-        font-size: 0.8rem;
-        margin: auto;
-    }
-}
+
+
 
 @media (min-width: 1200px) {
 
@@ -177,7 +171,6 @@
         bottom: 200px;
         right: 390px;
         margin: 12px 0 6px 0;
-
         background-color: #65f5ab;
     }
 
@@ -186,8 +179,8 @@
     .aviso {
         display: block;
         position: absolute;
-        bottom: 110px;
-        right: 50px;
+        bottom: 90px;
+        right: 10px;
         color: #3d3a3a;
         font-size: 0.9rem;
         max-width: 50ch;
@@ -205,6 +198,20 @@
     }
 
 }
+
+@media (max-width: 1199px) {
+    .aviso {
+        margin: 32px auto;
+        color: #363232;
+    }
+
+    .container-formulario {
+        padding: 40px;
+        overflow-y: scroll;
+    }
+    
+}
+
 
 
 
@@ -283,7 +290,7 @@
 
     }   
     #formulario {
-        margin-top: 13px;
+        margin-top: 12px;
     } 
 
     

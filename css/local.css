@@ -92,6 +92,7 @@
     }
 
     .local p {
+        display: block;
         font-size: 1rem;
     }
 }

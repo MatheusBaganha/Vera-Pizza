@@ -16,23 +16,28 @@ export default function initTrocarPizza() {
 
 
     //Muda a imagem da pizza para a selecionada
-    function trocarImg(imagemSelecionada ,imagemLocal) {
+    function trocarImg(imagemSelecionada, imagemLocal) {
         imagemSelecionada.setAttribute('src', imagemLocal);
     }
 
 
     //Ativa a animação do css e verifica caso ja tenha a classe para nao ter erros na hora de animar, como por ex, clicar uma vez, e na segunda vez pela classe ja estar ativada, não ativar mais a animação. O setTimeout tambem impede erros, serve pra nao deixar tudo instantaneo e travar a animação.
-    function animarConteudo(animar) {
-        if(animar.classList.contains('animar')) {
-            animar.classList.remove('animar');
+
+
+    function animarConteudo(conteudo) {
+        if(conteudo.classList.contains('animar')) {
+            conteudo.classList.remove('animar');
             setTimeout(() => {
-                animar.classList.add('animar');
-            }, 10);
+                conteudo.classList.add('animar');
+            }, 20);
         } else {
-            animar.classList.add('animar');
+            conteudo.classList.add('animar');
         }
     }
 
+   
+
+    
 
     //Troca todo o conteudo sobre as pizzas de acordo com o circulo que foi clicado
 
@@ -41,21 +46,22 @@ export default function initTrocarPizza() {
             tituloPizza.innerText = 'Pizza Marguerita';
             texto.innerText = 'Sabor ícone da Itália que leva apenas molho, muçarela, tomate e manjericão. É uma ótima opção para quem não come carne.'
             trocaCor('white');
-            trocarImg(imagem, 'img/cheese-pizza2.png')
+            trocarImg(imagem, 'img/cheese-pizza2.png');
             animarConteudo(animar1);
+
 
         } else if(conteudo.currentTarget === circulos[2]) {
             tituloPizza.innerText = 'Pizza Portuguesa';
             texto.innerText = 'Ovos, cebola, azeitona, ervilha, queijo e presunto dão sabor a segunda pizza mais queridinha dos brasileiros.';
             trocaCor('#CE3C4D');
-            trocarImg(imagem ,'img/cheese-pizza3.png')
+            trocarImg(imagem ,'img/cheese-pizza3.png');
             animarConteudo(animar1);
 
         } else {
             tituloPizza.innerText = 'Pizza de Calabresa';
             texto.innerText = 'A pizza que comemos hoje, redonda com molho de tomate e coberta com queijo, surgiu em Nápoles, Itália, por volta do século 18. Só que a massa em forma de disco assada em forno e com cobertura é uma criação bem mais antiga.'
             trocaCor('#008D44');
-            trocarImg(imagem, 'img/pizza-calabresa.png')
+            trocarImg(imagem, 'img/pizza-calabresa.png');
             animarConteudo(animar1);
 
         }
@@ -97,7 +103,7 @@ export default function initTrocarPizza() {
     circulos.forEach((circulo) => {
         circulo.addEventListener('click', trocarConteudo);
         circulo.addEventListener('click', animarConteudo);
-    })
+    });
 
     
     selecionado.addEventListener('change', mudaInfo);

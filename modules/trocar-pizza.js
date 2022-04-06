@@ -102,11 +102,7 @@ export default function initTrocarPizza() {
     //Eventos das funções
     circulos.forEach((circulo) => {
         circulo.addEventListener('click', trocarConteudo);
-        circulo.addEventListener('click', animarConteudo);
     });
 
-    
     selecionado.addEventListener('change', mudaInfo);
-    selecionado.addEventListener('change', animarConteudo);
-
 }

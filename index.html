@@ -112,21 +112,21 @@
             <h2 class="titulo-form">FAÇA SEU PEDIDO</h2>
             <form id="formulario" action="#" method="post"> 
                 <label for="nome">Nome</label>
-                <input type="text" name="nome" id="nome">
+                <input type="text" name="nome" id="nome" required>
                 
                 <label for="rua">Rua</label>
-                <input type="text" name="rua" id="rua">
+                <input type="text" name="rua" id="rua" required>
                  
                 <label for="numero">Número</label>
-                <input type="number" name="numero" id="numero">
+                <input type="number" name="numero" id="numero" required>
                 
                 <label for="email">Email</label>
-                <input type="email" name="email" id="email">
+                <input type="email" name="email" id="email" required>
                 
                 <div class="select-pizza">
                     <label for="pizza">Pizza</label>
-                    <select name="pizza" id="pizza">
-                        <option value="calabresa">Calabresa</option>
+                    <select data-select name="pizza" id="pizza" required>
+                        <option value="calabresa" selected>Calabresa</option>
                         <option value="portuguesa">Portuguesa</option>
                         <option value="marguerita">Marguerita</option>
                     </select>
@@ -134,10 +134,10 @@
                 
                 <button id="finalizar-pedido" type="submit">FINALIZAR</button>
 
-                <div class="container-pizza-escolhida">
-                    <img id="pizza-escolhida" src="img/pizza-calabresa.png" alt="Cheese-Pizza">
+                <div data-animar2 class="container-pizza-escolhida animar">
+                    <img data-pizzaEscolhida id="pizza-escolhida" src="img/pizza-calabresa.png" alt="Cheese-Pizza">
                     <span class="linha-preco"></span>
-                    <p class="preco">R$ 39,99</p>
+                    <p data-preco class="preco">R$ 39,99</p>
                 </div>
                 <p class="aviso">Após finalizado, você receberá um pedido de confirmação junto com todos os detalhes da compra em seu e-mail e assim que a confirmação for feita, seu pedido será preparado imediatamente.</p>
             </form>

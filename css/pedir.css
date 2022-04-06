@@ -145,6 +145,7 @@
         padding-left: 100px;
         box-sizing: border-box;
         margin-top: 32px;
+        transform: translateX(-30px);
     }
 
     .container-pizza-escolhida, .aviso {

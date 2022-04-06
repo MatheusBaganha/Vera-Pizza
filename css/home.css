@@ -89,6 +89,9 @@ article p {
 @media (max-width: 1060px) {
     .grid-container {
         grid-template-columns: 1fr;
+        justify-content: start;
+        margin-right: 10px;
+     
     }   
 
     .foto-pizza {

@@ -1,14 +1,15 @@
 export default function initPedirPizza() {
     const modal = document.querySelector('[data-modal]');
-    const btnPedir = document.querySelector('[data-pedir]');
+    const btnPedir = document.querySelectorAll('[data-pedir]');
     const btnFechar = document.querySelector('[data-fechar]');
     
     function abrirForm() {
         modal.classList.add('mostrar');
     }
     
-    
-    btnPedir.addEventListener('click', abrirForm);
+    btnPedir.forEach((botao) => {
+        botao.addEventListener('click', abrirForm)
+    })
 
 
     modal.addEventListener('click', (elemento) => {

@@ -11,35 +11,42 @@
 
 .container-pergunta {
     justify-content: center;
-    width: 65vw;
+    width: 85vw;
     margin-bottom: 32px;
+    margin-left: -15px;
     padding: 32px;
     box-sizing: border-box;
     border-radius: 6px;
     background-color: #e6e6e6bb;
     border: 1px solid #c7c7c7a4;
     box-shadow: 2px 2px 5px rgba(43, 43, 43, 0.185);
-    cursor: pointer;
 
 
 }
 
 .perguntas-freq {
     display: block;
-    text-align: center;
-    font-size: 2.4rem;
-    margin: 64px 0;
+    text-align: start;
+    font-size: 2.5rem;
+    margin: 4rem 3rem;
     color: rgb(22, 19, 19);
+}
+
+
+.linha-duvida {
+    margin-top: 9px;
+    width: 120px;
 }
 
 .pergunta {
     display: block;
-    font-size: 1.3rem;
+    font-size: 1.2rem;
     text-align: start;
-    padding-right: 32px;
+    padding-right: 10px;
     font-weight: bold;
     color: rgb(22, 22, 22);
     position: relative;
+    cursor: pointer;
 
 }
 
@@ -62,8 +69,9 @@
     width: 30px;
     height: 30px;
     position: absolute;
-    right: 0;
+    right: -15px;
     top: 0;
+    transition: 0.3s ease;
     
 }
 
@@ -89,4 +97,22 @@
     animation: slide .3s forwards;
 }
 
+.resposta.abrir .pergunta::after {
+    transform: rotate(180deg);
+}
 
+
+@media (max-width: 625px) {
+    .perguntas-freq {
+        font-size: 2.1rem;
+        margin: 4rem -1rem;
+    }
+
+    .pergunta {
+        font-size: 1.1rem;
+    }
+
+    .resposta {
+        font-size: 1rem;
+    }
+}

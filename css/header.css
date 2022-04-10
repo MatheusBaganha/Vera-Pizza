@@ -12,6 +12,7 @@ a {
 
 li a:hover {
     color: #cfc7c7;
+    cursor: pointer;
 }
 
 .header-bg {
@@ -20,7 +21,7 @@ li a:hover {
 }
 
 .logo img {
-    max-width: 145px;
+    max-width: 200px;
 }
 
 a.logo {

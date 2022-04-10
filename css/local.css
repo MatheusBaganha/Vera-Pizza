@@ -32,8 +32,27 @@
 
 
 .local p {
-    font-size: 1.2rem;
+    display: flex;
+    flex-wrap: wrap;
+    flex: 1 2 auto;
+    font-size: 1.5rem;
     color: rgb(20, 20, 20);
+    margin-bottom: 9px;
+    justify-content: flex-start;
+    position: relative;
+}
+
+.local p::before {
+    content: '';
+    width: 12px;
+    height: 12px;
+    border-radius: 50%;
+    display: inline-block;
+    margin-right: 12px;
+    background-color: #008D44;
+    position: absolute;
+    left: -25px;
+    top: 10px;
 }
 
 
@@ -55,22 +74,12 @@
 
     }
     
-    
-    .local p {
-        font-size: 1.2rem;
-    }
 
     .local div {
-        display: flex;
-        flex-wrap: wrap;
-        justify-content: center;
-        gap: 128px;
-        margin: -32px 5px;
+        margin: -32px 35px;
     }
 
-    .linha5 {
-        display: none;
-    }
+    
     
     .mapa {
         max-width: 500px;
@@ -87,61 +96,55 @@
 
     .local div {
         justify-content: flex-start;
-        margin-left: 72px;
-        margin: 0 auto;
+        margin-left: 32px;
     }
 
-    .local p {
-        display: block;
-        font-size: 1rem;
-    }
+    
 }
 
 
 @media (max-width: 565px) {
 
     .local div {
-        gap: 36px;
-        margin: -32px 15px;
-        justify-content: center;
+        margin: -64px 32px;
     }
 
-    .local p {
-        font-size: 1rem;
-    }
 }
 
-
-
-@media (max-width: 498px) {
-    .local div {
-        justify-content: flex-start;
-        margin: -32px 32px;
-     }
-}
 
 @media (max-width: 479px) { 
     .mapa {
-        max-width: 300px;
+        max-width: 380px;
     }
 }
 
  
-@media (max-width: 300px) {
+@media (max-width: 400px) {
+    .mapa {
+        max-width: 300px;
+    }
+
+
+    .local p {
+        font-size: 1.2rem;
+    }
+}
+
+
+@media (max-width: 330px) {
     .mapa {
         max-width: 250px;
     }
 
     .local div {
-        margin: -32px 15px;
-
+        margin-top: -64px;
+        margin-bottom: -64px;
     }
-}
 
-@media (max-width: 500px) {
-    .local div {
-        margin-left: -3px;
+    .local p {
+        font-size: 1.2rem;
     }
+
 }
 
 

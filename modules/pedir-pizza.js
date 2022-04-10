@@ -11,7 +11,6 @@ export default function initPedirPizza() {
         botao.addEventListener('click', abrirForm)
     })
 
-
     modal.addEventListener('click', (elemento) => {
         if(elemento.target === modal || elemento.target === btnFechar) {
         modal.classList.remove('mostrar');

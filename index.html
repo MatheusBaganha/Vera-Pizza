@@ -4,11 +4,12 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Pizzaria</title>
+    <title>Vera Pizza</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Merriweather:wght@700&family=Nunito+Sans:wght@400;700&display=swap" rel="stylesheet">
     <meta name="description" content="A verdadeira pizza italiana na porta da sua casa. Sempre com a melhor qualidade e menor preço.">
+    <link rel="shortcut icon" href="svg/pizza-icone.svg" type="image/x-icon">
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
@@ -21,7 +22,7 @@
                 <li><a href="cardapio.html">Cardápio</a></li>
                 <li><a href="duvidas.html">Dúvidas</a></li>
                 <li><a href="#footer">Contato</a></li>
-                <li><a data-pedir class="pedir-menu">Peça já</a></li>
+                <li><a data-pedir class="pedir-menu" aria-haspopup="true" aria-expanded="false">Peça já</a></li>
             </ul>
         </nav>
     </header>
@@ -32,7 +33,7 @@
             <div class="linha1"></div>
             <h2 class="titulo2">A verdadeira <strong>pizza italiana</strong><br> preparada para você<br> com amor.</h2>
             <p class="corpo-texto">A pizza é um prato de origem italiana que consiste em uma base geralmente redonda e plano de massa fermentada coberta com tomate, queijo e outros ingredientes, que é então assada em forno a lenha.</p>
-            <a data-pedir href="#" class="pedir">PEDIR AGORA</a>   
+            <a data-pedir href="#" class="pedir" aria-label="Pedir Agora" aria-haspopup="true" aria-expanded="false">PEDIR AGORA</a>   
         </article>
         
         <div>
@@ -89,7 +90,7 @@
                     <li><a href="#footer">Contato</a></li>
                     <li><a href="duvidas.html">Duvídas</a></li>
                     <li><a href="cardapio.html">Cardápio</a></li>
-                    <li><a data-pedir>Peça já</a></li>
+                    <li><a data-pedir aria-haspopup="true" aria-expanded="false">Peça já</a></li>
                 </ul>
             </div>
 

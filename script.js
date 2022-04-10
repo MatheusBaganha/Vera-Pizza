@@ -6,4 +6,4 @@ import initAbrirPergunta from './modules/abrir-pergunta.js';
 initMenuMobile();
 initTrocarPizza();
 initPedirPizza();
-initAbrirPergunta()
+initAbrirPergunta();

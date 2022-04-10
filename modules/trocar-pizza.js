@@ -22,8 +22,6 @@ export default function initTrocarPizza() {
 
 
     //Ativa a animação do css e verifica caso ja tenha a classe para nao ter erros na hora de animar, como por ex, clicar uma vez, e na segunda vez pela classe ja estar ativada, não ativar mais a animação. O setTimeout tambem impede erros, serve pra nao deixar tudo instantaneo e travar a animação.
-
-
     function animarConteudo(conteudo) {
         if(conteudo.classList.contains('animar')) {
             conteudo.classList.remove('animar');
@@ -35,12 +33,8 @@ export default function initTrocarPizza() {
         }
     }
 
-   
-
-    
 
     //Troca todo o conteudo sobre as pizzas de acordo com o circulo que foi clicado
-
     function trocarConteudo(conteudo) {
         if(conteudo.currentTarget === circulos[1]) {
             tituloPizza.innerText = 'Pizza Margherita';
@@ -48,7 +42,6 @@ export default function initTrocarPizza() {
             trocaCor('white');
             trocarImg(imagem, 'img/cheese-pizza2.png');
             animarConteudo(animar1);
-
 
         } else if(conteudo.currentTarget === circulos[2]) {
             tituloPizza.innerText = 'Pizza Portuguesa';
@@ -63,21 +56,16 @@ export default function initTrocarPizza() {
             trocaCor('#008D44');
             trocarImg(imagem, 'img/pizza-calabresa.png');
             animarConteudo(animar1);
-
         }
     }
 
 
-
-
-    // Troca de conteudo do formulario
-    
+    // Troca de conteudo do formulario 
     const animar2 = document.querySelector('[data-animar2]');
     const imgPizzaEscolhida = document.querySelector('[data-pizzaEscolhida]');
     const preco = document.querySelector('[data-preco]');
     const selecionado = document.querySelector('[data-select]');
 
-    
     function mudaInfo() {
             if(selecionado.options.selectedIndex === 0) {
                 preco.innerText = 'R$ 39,99';
@@ -97,8 +85,6 @@ export default function initTrocarPizza() {
     }
 
           
-
-
     //Eventos das funções
     circulos.forEach((circulo) => {
         circulo.addEventListener('click', trocarConteudo);

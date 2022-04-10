@@ -13,6 +13,7 @@
     margin: 0;    
 }
 
+/* Faz o formulario de pedido aparecer na tela e animação quando ocorre*/
 .container-modal.mostrar {
     display: flex;
     animation: mostrar .3s ease;
@@ -58,9 +59,6 @@
     position: relative;
 }
 
-
-
-
 #formulario label {
     display: block;
     font-weight: bold;
@@ -84,13 +82,9 @@
     max-width: 190px;
 }
 
-
-
 #numero {
     width: 70px;
 }
-
-
 
 #pizza {
     display: block;
@@ -110,8 +104,6 @@
     margin-top: -16px;
     margin-bottom: 12px;
 }
-
-
 
 #botao-fechar {
     background-color: #f0e9ea;
@@ -133,11 +125,7 @@
 }
 
 
-
-
-
 @media (min-width: 1200px) {
-
     .container-pizza-escolhida {
         display: block;
         position: relative;
@@ -159,7 +147,6 @@
         bottom: 160px;
         right: 340px;
         margin: 6px 0;
-
     }
 
     .linha-preco {
@@ -174,8 +161,6 @@
         background-color: #65f5ab;
     }
 
-
-
     .aviso {
         display: block;
         position: absolute;
@@ -184,7 +169,6 @@
         color: #3d3a3a;
         font-size: 0.9rem;
         max-width: 50ch;
-
     }
 
     #pizza-escolhida {
@@ -196,8 +180,8 @@
         right: 124px;
         margin-bottom: 12px;
     }
-
 }
+
 
 @media (max-width: 1199px) {
     .aviso {
@@ -209,17 +193,7 @@
         padding: 40px;
         overflow-y: scroll;
     }
-    
 }
-
-
-
-
-
-
-
-
-
 
 
 #botao-fechar:hover {
@@ -229,7 +203,6 @@
 #botao-fechar:active {
     background-color: #b9acac;
 }
-
 
 #finalizar-pedido {
     display: block;
@@ -256,7 +229,6 @@
 #finalizar-pedido:active {
     background-color: #045a2d;
 }
-
 
 
 @media (max-width: 480px) {
@@ -287,12 +259,9 @@
     
     .container-formulario {
         padding: 40px 40px 32px 40px;
-
     }   
+
     #formulario {
         margin-top: 12px;
-    } 
-
-    
-
+    }
 }

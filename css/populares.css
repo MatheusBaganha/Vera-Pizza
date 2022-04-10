@@ -1,12 +1,9 @@
-/* populares */
-
 .populares-bg {
     display: grid;
     background-color: #EAEEE8;
     margin: 0 auto;
     padding: 30px;
     justify-content: center;
-
 }
 
 #populares-h2 {
@@ -15,8 +12,7 @@
     font-size: 2rem;
     font-weight: bold;
     justify-content: center;
-    margin-bottom: 36px;
-    margin-top: 36px;
+    margin: 36px 0;
 }
 
 .flex-pop {
@@ -60,10 +56,6 @@
     background-color: #a52534;
 }
 
-
-
-
-
 #pizzas {
     display: grid;
     grid-template-columns: minmax(100px, 220px) 1fr;
@@ -74,7 +66,6 @@
     transform: translateX(-30px);
 }
 
-
 .container-pizza img {
     max-width: 300px;
     margin-left: 70px;
@@ -83,12 +74,12 @@
 
 .container-descricao {
     margin: 0 auto 0 164px;
-    
 }
 
 .animar {
     animation: slide .3s forwards;
 }
+
 
 @keyframes slide {
     from {
@@ -113,10 +104,7 @@
 #pizzas p {
     font-size: 1.2rem;
     max-width: 65ch;
-
 }
-
-
 
 
 @media (min-width: 1500) {
@@ -129,6 +117,7 @@
         margin: 0 auto;
     }
 }
+
 
 @media (max-width: 1060px) {
     #pizzas {
@@ -153,6 +142,7 @@
     }
 }
 
+
 @media (max-width: 700px) {
     #pizzas {
         margin-top: 25px;
@@ -168,5 +158,3 @@
         font-size: 1rem;    
     }
 }
-
- 

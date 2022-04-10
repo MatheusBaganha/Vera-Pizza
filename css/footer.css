@@ -1,6 +1,3 @@
-/* footer */
-
-
 footer {
     padding: 50px 30px 30px 30px;    
     background-color: #C0293A;
@@ -19,24 +16,21 @@ footer {
     max-width: 200px;
 }
 
-
 .footer-nav h3 {
     color: #ffffff;
-    margin-bottom: 12px;
-    
 }
 
 .footer-nav p, .footer-nav li, .linha-footer a {
     color: #ebebeb;
-    margin-bottom: 12px;
 }
-
-
 
 .linha-footer a:hover {
     color: #cfcfcf;
 }
 
+.footer-nav h3, .footer-nav p, .footer-nav li, .linha-footer a {
+    margin-bottom: 12px;
+}
 
 .copy {
     display: block;
@@ -44,10 +38,6 @@ footer {
     margin-top: 16px;
     margin-bottom: -16px;
     margin-left: 13px;
-    color: #ebebeb;
-}
-
-.copy a {
     color: #ebebeb;
 }
 
@@ -63,7 +53,6 @@ footer {
     position: relative;
 }
 
-
 .linha-footer::before {
     content: '';
     width: 2px;
@@ -74,21 +63,18 @@ footer {
     left: -12px;
 }
 
+
 @media(max-width: 600px) {
     .linha-footer::before {
         height: 225px;
     }
 }
 
-
 .rede-social {
     display: flex;
     gap: 12px;
     align-items: center;
 }
-
-
-
 
 
 @media (max-width: 1060px) {
@@ -115,8 +101,9 @@ footer {
     }
 }
 
+
 @media(max-width: 600px) {
     .footer-nav {
         grid-template-columns: 1fr;
     }
-} 
+}

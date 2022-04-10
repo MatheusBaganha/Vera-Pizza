@@ -1,5 +1,3 @@
-/* localizacao */
-
 .local-bg {
     background-color: #E5EBEB;
     padding: 30px;
@@ -27,9 +25,7 @@
     align-items: center;
     gap: 148px;
     padding-bottom: 64px;
-
 }
-
 
 .local p {
     display: flex;
@@ -55,14 +51,10 @@
     top: 10px;
 }
 
-
 .mapa {
     max-width: 500px;
     margin-left: 128px;
 }
-
-
-
 
 
 @media (max-width: 1080px) {
@@ -71,23 +63,18 @@
         justify-content: center;
         align-items: center;
         padding-bottom: 128px;
-
     }
     
-
     .local div {
         margin: -32px 35px;
     }
 
-    
-    
     .mapa {
         max-width: 500px;
         margin: 0 auto;
     }
-
-    
 }
+
 
 @media (max-width: 660px) {
     .mapa {
@@ -97,18 +84,14 @@
     .local div {
         justify-content: flex-start;
         margin-left: 32px;
-    }
-    
+    }   
 }
 
 
 @media (max-width: 565px) {
-
     .local div {
         margin: -64px 32px;
     }
-
-    
 }
 
 
@@ -123,7 +106,6 @@
     .mapa {
         max-width: 300px;
     }
-
 
     .local p {
         font-size: 1.2rem;
@@ -148,8 +130,4 @@
     .local p {
         font-size: 1.2rem;
     }
-
 }
-
-
-

@@ -6,7 +6,6 @@
     align-items: center;
 }
 
-
 .container-item {
     border: 1px solid rgba(211, 211, 211, 0.568);
     box-shadow: 1px 1px 3px rgba(39, 39, 39, 0.233);
@@ -17,11 +16,14 @@
     margin-bottom: 32px;
 }
 
+.linha-cardapio {
+    width: 90px;
+    margin-top: 6px;
+}
 
 .container-item img {
     max-width: 250px;
     filter: drop-shadow(1px 1px 5px rgba(0, 0, 0, 0.24));
-    
 }
 
 .container-item h2 {
@@ -29,9 +31,7 @@
     font-weight: bold;
     font-size: 1.5rem;
     margin-top: 42px;
-    margin-bottom: 22px;
-
-    
+    margin-bottom: 22px;    
 }
 
 .container-item p {
@@ -42,7 +42,6 @@
     position: relative;
     margin-bottom: 12px;
     margin-top: 16px;
-
 }
 
 .container-item p::before {
@@ -54,13 +53,11 @@
     position: absolute;
     top: -10px;
     border-radius: 3px;
-
 }
 
 .bebida {
     color: rgb(88, 88, 88);
     font-weight: normal;
-
 }
 
 .container-item a {
@@ -80,7 +77,6 @@
 .container-item a:hover {
     background-color: #0f9b53;
 }
-
 
 
 @media(max-width: 1200px) {
@@ -109,8 +105,7 @@
     .container-item {
         max-width: 250px;
         padding: 20px;
-        margin: 0 22px 0 auto;
-        
+        margin: 0 22px 0 auto;   
     }
 
     .cardapio-titulo, .cardapio-corpo {
@@ -132,5 +127,4 @@
     .container-item:last-child {
         margin-bottom: 64px;
     }
-
 }

@@ -3,35 +3,36 @@
     margin: 0;
 }
 
+/* Faz os links internos terem um scroll suave */
+
 html {
     scroll-behavior: smooth;
-}
-
-body {
-    background-color: #E5EBEB;
 }
 
 :target {
     margin-top: 0.7rem;
 }
 
+body {
+    background-color: #E5EBEB;
+}
+
+
 
 /* TIPOGRAFIA */
-
 
 .titulo, .titulo2, #pizzas h3, .titulo-form, .perguntas-freq, .cardapio-titulo, .container-item h2 {
     font-family: 'Merriweather', serif;
     font-weight: bold;
 }
 
-.corpo-texto, .pedir, .populares-bg h2, .local-bg h3, .local-bg p, footer, .container-modal label, #botao-fechar, #finalizar-pedido, #pizza, #formulario input, .aviso, .preco, .pergunta ,.resposta, .duvida, #pizzas p, .cardapio-corpo, .container-item a, .preco-pizza {
+.flex-ul ,.corpo-texto, .pedir, .populares-bg h2, .local-bg h3, .local-bg p, footer, .container-modal label, #botao-fechar, #finalizar-pedido, #pizza, #formulario input, .aviso, .preco, .pergunta ,.resposta, .duvida, #pizzas p, .cardapio-corpo, .container-item a, .preco-pizza {
     font-family: 'Nunito Sans', sans-serif;
 }
 
 
 
-/* Linhas */
-
+/* Linhas de Decoração*/
 
 .linha1 {
     content: '';
@@ -51,20 +52,9 @@ body {
     background-color: #008D44;
 }
 
-.linha2 {
+.linha2, .linha5 {
     width: 50px;
 }
-
-.linha4 {
-    margin: 0 auto;
-}
-
-.linha5 {
-    width: 50px;
-    margin: 32px 0;
-}
-
-
 
 .linha2 {
     margin: 0 auto;
@@ -74,4 +64,31 @@ body {
 .linha3 {
     margin-top: 12px;
     margin-bottom: 36px;
+}
+
+.linha4 {
+    margin: 0 auto;
+}
+
+.linha5 {
+    margin: 32px 0;
+}
+
+
+/* Compartilham o mesmo código em paginas diferentes*/
+
+.duvida, .cardapio-corpo {
+    display: block;
+    font-size: 1.2rem;
+    text-align: start;
+    margin: -1.9rem 0 3.5rem 0.5rem;
+    color: rgb(39, 39, 39);   
+}
+
+.perguntas-freq, .cardapio-titulo {
+    display: block;
+    text-align: start;
+    font-size: 2.5rem;
+    margin: 4rem 0.5rem;
+    color: rgb(22, 19, 19);
 }

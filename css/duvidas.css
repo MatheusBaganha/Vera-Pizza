@@ -6,7 +6,6 @@
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
-
 }
 
 .container-pergunta {
@@ -20,36 +19,11 @@
     background-color: #e6e6e6bb;
     border: 1px solid #c7c7c7a4;
     box-shadow: 2px 2px 5px rgba(43, 43, 43, 0.185);
-
-
 }
-
-.perguntas-freq, .cardapio-titulo {
-    display: block;
-    text-align: start;
-    font-size: 2.5rem;
-    margin: 4rem 0.5rem;
-    color: rgb(22, 19, 19);
-}
-
 
 .linha-duvida {
     margin-top: 9px;
     width: 120px;
-}
-
-.linha-cardapio {
-    width: 90px;
-    margin-top: 6px;
-}
-
-.duvida, .cardapio-corpo {
-    display: block;
-    font-size: 1.2rem;
-    text-align: start;
-    margin: -1.9rem 0 3.5rem 0.5rem;
-    color: rgb(39, 39, 39);
-    
 }
 
 .pergunta {
@@ -61,7 +35,6 @@
     color: rgb(22, 22, 22);
     position: relative;
     cursor: pointer;
-
 }
 
 .pergunta::before {
@@ -88,8 +61,6 @@
     transition: 0.3s ease;
 }
 
-
-
 .resposta {
     display: none;
     text-align: start;
@@ -100,27 +71,24 @@
     margin-top: 12px;
     transform: translateY(-30px);
     transition: 3s ease-in;
-
 }
 
 .pergunta, .resposta {
     margin-left: 12px;
 }
 
+/* Abre as resposas ao clicar nas perguntas e ocorre uma animação */
+
 .abrir {
     display: block;
     animation: slide .3s forwards;
 }
-
-
 
 [data-container-pergunta].rodar > .pergunta::after {
     transform: rotate(180deg);
     right: -10px;
     top: -5px;
 }
-
-
 
 
 @media (max-width: 625px) {
@@ -143,7 +111,6 @@
 
     .duvida {
         font-size: 1.2rem;
-        margin: -1rem 0 2.5rem -1rem;
-        
+        margin: -1rem 0 2.5rem -1rem; 
     }
 }

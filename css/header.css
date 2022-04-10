@@ -24,6 +24,7 @@ li a:hover {
     max-width: 200px;
 }
 
+
 a.logo {
     display: block;
 }
@@ -50,6 +51,10 @@ a.logo {
     border-radius: 8px;
 }
 
+.pedir-menu:hover {
+    background-color: rgba(150, 32, 46, 0.5); 
+}
+
 [data-btnMenu] {
     display: none;
     width: 32px;
@@ -66,7 +71,7 @@ a.logo {
 
 /* menu mobile */
 
-@media (max-width: 800px) {
+@media (max-width: 860px) {
     [data-btnMenu] {
         display: flex;
         justify-content: center;
@@ -156,8 +161,13 @@ a.logo {
         padding: 16px 0;
     }
 
-    
    
 
 }
  
+
+@media(max-width: 320px) {
+    .logo img {
+        max-width: 150px;
+    }
+}

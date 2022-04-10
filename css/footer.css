@@ -41,9 +41,22 @@ footer {
 .copy {
     display: block;
     text-align: center;
-    margin-top: 12px;
+    margin-top: 16px;
     margin-bottom: -16px;
+    margin-left: 13px;
     color: #ebebeb;
+}
+
+.copy a {
+    color: #ebebeb;
+}
+
+.copy a:hover {
+    color: #c4c4c4;
+}
+
+.copy a:active {
+    color: #949494;
 }
 
 .linha-footer {

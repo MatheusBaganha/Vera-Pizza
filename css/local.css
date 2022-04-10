@@ -98,7 +98,6 @@
         justify-content: flex-start;
         margin-left: 32px;
     }
-
     
 }
 
@@ -109,6 +108,7 @@
         margin: -64px 32px;
     }
 
+    
 }
 
 
@@ -127,6 +127,10 @@
 
     .local p {
         font-size: 1.2rem;
+    }
+
+    .local p::before {
+        top: 5px;
     }
 }
 

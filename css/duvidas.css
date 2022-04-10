@@ -24,7 +24,7 @@
 
 }
 
-.perguntas-freq {
+.perguntas-freq, .cardapio-titulo {
     display: block;
     text-align: start;
     font-size: 2.5rem;
@@ -38,7 +38,12 @@
     width: 120px;
 }
 
-.duvida {
+.linha-cardapio {
+    width: 90px;
+    margin-top: 6px;
+}
+
+.duvida, .cardapio-corpo {
     display: block;
     font-size: 1.2rem;
     text-align: start;

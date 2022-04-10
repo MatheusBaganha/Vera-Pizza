@@ -12,14 +12,14 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <header class="header-bg flex-nav">
+    <header id="duvida" class="header-bg flex-nav">
         <a class="logo logo-header" href="index.html"><img src="svg/vera-pizza.svg" alt="Logo da pizzaria"></a>
         <nav data-nav>
             <button data-btnMenu aria-label="Abrir Menu" aria-haspopup="true" aria-controls="menu" aria-expanded="false"><span class="icone-menu"></span></button>
             <ul id="menu" class="flex-ul" data-itens role="menu">  
                 <li><a href="index.html">Home</a></li>
                 <li><a href="cardapio.html">Cardápio</a></li>
-                <li><a href="duvidas.html">Dúvidas</a></li>
+                <li><a href="#duvida">Dúvidas</a></li>
                 <li><a href="#footer">Contato</a></li>
                 <li><a data-pedir class="pedir-menu">Peça já</a></li>
             </ul>
@@ -72,7 +72,7 @@
                 <ul>
                     <li><a href="index.html">Home</a></li>
                     <li><a href="#footer">Contato</a></li>
-                    <li><a href="duvidas.html">Duvídas</a></li>
+                    <li><a href="#duvida">Duvídas</a></li>
                     <li><a href="cardapio.html">Cardápio</a></li>
                     <li><a data-pedir>Peça já</a></li>
                 </ul>
@@ -89,7 +89,7 @@
                 </div>
             </div>
         </div>
-        <p class="copy">© Pizzaria. Matheus Baganha.</p>
+        <p class="copy">© Pizzaria. <a href="https://github.com/MatheusBaganha" target="blank">Matheus Baganha</a>.</p>
     </footer>
 
 
@@ -113,9 +113,9 @@
                 <div class="select-pizza">
                     <label for="pizza">Pizza</label>
                     <select data-select name="pizza" id="pizza" required>
-                        <option value="calabresa" selected>Calabresa</option>
-                        <option value="portuguesa">Portuguesa</option>
-                        <option value="marguerita">Marguerita</option>
+                        <option value="calabresa" selected>Calabresa - R$ 39,99</option>
+                        <option value="portuguesa">Portuguesa - R$ 29,99</option>
+                        <option value="marguerita">Margherita - R$ 49,99</option>
                     </select>
                 </div>
                 

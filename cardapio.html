@@ -12,13 +12,13 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <header class="header-bg flex-nav">
+    <header id="cardapio" class="header-bg flex-nav">
         <a class="logo logo-header" href="index.html"><img src="svg/vera-pizza.svg" alt="Logo da pizzaria"></a>
         <nav data-nav>
             <button data-btnMenu aria-label="Abrir Menu" aria-haspopup="true" aria-controls="menu" aria-expanded="false"><span class="icone-menu"></span></button>
             <ul id="menu" class="flex-ul" data-itens role="menu">  
                 <li><a href="index.html">Home</a></li>
-                <li><a href="cardapio.html">Cardápio</a></li>
+                <li><a href="#cardapio">Cardápio</a></li>
                 <li><a href="duvidas.html">Dúvidas</a></li>
                 <li><a href="#footer">Contato</a></li>
                 <li><a data-pedir class="pedir-menu">Peça já</a></li>
@@ -26,9 +26,81 @@
         </nav>
     </header>
 
-    <section>
+    <section class="article-bg container">
+        <h1 class="cardapio-titulo">Cardápio<div class="linha1 linha-cardapio"></div></h1></h1>
+        <p class="cardapio-corpo">De uma olhada no nosso cardápio e escolha a que mais lhe agradar.</p>
+        <div class="container-grid-cardapio">
+            <div class="container-item">
+                <img src="img/pizza-calabresa.png" alt="pizza">
+                <h2>Pizza de Calabresa</h2>
+                <p class="preco-pizza">R$ 39,99 <span class="bebida">+ Coca-Cola grátis.</span></p>
+                <a data-pedir>PEDIR</a>
+            </div>
+
+            <div class="container-item">
+                <img src="img/Cheese-Pizza.png" alt="pizza">
+                <h2>Pizza Portuguesa</h2>
+                <p class="preco-pizza">R$ 29,99 <span class="bebida">+ Coca-Cola grátis.</span></p>
+                <a data-pedir>PEDIR</a>
+            </div>
+
+            <div class="container-item">
+                <img src="img/cheese-pizza3.png" alt="pizza">
+                <h2>Pizza Margherita</h2>
+                <p class="preco-pizza">R$ 49,99 <span class="bebida">+ Coca-Cola grátis.</span></p>
+                <a data-pedir>PEDIR</a>
+            </div>
 
 
+
+            <div class="container-item">
+                <img src="img/cheese-pizza3.png" alt="pizza">
+                <h2>Pizza Margherita</h2>
+                <p class="preco-pizza">R$ 49,99 <span class="bebida">+ Coca-Cola grátis.</span></p>
+                <a data-pedir>PEDIR</a>
+            </div>
+
+            <div class="container-item">
+                <img src="img/pizza-calabresa.png" alt="pizza">
+                <h2>Pizza de Calabresa</h2>
+                <p class="preco-pizza">R$ 39,99 <span class="bebida">+ Coca-Cola grátis.</span></p>
+                <a data-pedir>PEDIR</a>
+            </div>
+
+            <div class="container-item">
+                <img src="img/Cheese-Pizza.png" alt="pizza">
+                <h2>Pizza Portuguesa</h2>
+                <p class="preco-pizza">R$ 29,99 <span class="bebida">+ Coca-Cola grátis.</span></p>
+                <a data-pedir>PEDIR</a>
+            </div>
+
+
+            <div class="container-item">
+                <img src="img/pizza-calabresa.png" alt="pizza">
+                <h2>Pizza de Calabresa</h2>
+                <p class="preco-pizza">R$ 39,99 <span class="bebida">+ Coca-Cola grátis.</span></p>
+                <a data-pedir>PEDIR</a>
+            </div>
+
+            <div class="container-item">
+                <img src="img/cheese-pizza3.png" alt="pizza">
+                <h2>Pizza Margherita</h2>
+                <p class="preco-pizza">R$ 49,99 <span class="bebida">+ Coca-Cola grátis.</span></p>
+                <a data-pedir>PEDIR</a>
+            </div>
+
+            
+
+            <div class="container-item">
+                <img src="img/Cheese-Pizza.png" alt="pizza">
+                <h2>Pizza Portuguesa</h2>
+                <p class="preco-pizza">R$ 29,99 <span class="bebida">+ Coca-Cola grátis.</span></p>
+                <a data-pedir>PEDIR</a>
+            </div>
+
+
+            
+        </div>
 
     </section>
 
@@ -40,10 +112,11 @@
             <div class="linha-footer">
                 <h3>NAVEGAÇÃO</h3>
                 <ul>
-                    <li><a href="#">Home</a></li>
-                    <li><a href="#">Contato</a></li>
-                    <li><a href="#">Duvídas</a></li>
-                    <li><a href="#footer">Cardápio</a></li>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="#footer">Contato</a></li>
+                    <li><a href="duvidas.html">Duvídas</a></li>
+                    <li><a href="#cardapio">Cardápio</a></li>
+                    <li><a data-pedir>Peça já</a></li>
                 </ul>
             </div>
 
@@ -58,7 +131,7 @@
                 </div>
             </div>
         </div>
-        <p class="copy">© Pizzaria. Matheus Baganha.</p>
+        <p class="copy">© Pizzaria. <a href="https://github.com/MatheusBaganha" target="blank">Matheus Baganha</a>.</p>
     </footer>
 
 
@@ -82,9 +155,9 @@
                 <div class="select-pizza">
                     <label for="pizza">Pizza</label>
                     <select data-select name="pizza" id="pizza" required>
-                        <option value="calabresa" selected>Calabresa</option>
-                        <option value="portuguesa">Portuguesa</option>
-                        <option value="marguerita">Marguerita</option>
+                        <option value="calabresa" selected>Calabresa - R$ 39,99</option>
+                        <option value="portuguesa">Portuguesa - R$ 29,99</option>
+                        <option value="marguerita">Margherita - R$ 49,99</option>
                     </select>
                 </div>
                 

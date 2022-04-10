@@ -1,0 +1,136 @@
+.container-grid-cardapio {
+    display: grid;
+    grid-template-columns: repeat(3, 350px);
+    gap: 32px;
+    justify-content: center;
+    align-items: center;
+}
+
+
+.container-item {
+    border: 1px solid rgba(211, 211, 211, 0.568);
+    box-shadow: 1px 1px 3px rgba(39, 39, 39, 0.233);
+    border-radius: 10px;
+    background-color: #eeeeee;
+    max-width: 260px;
+    padding: 30px;
+    margin-bottom: 32px;
+}
+
+
+.container-item img {
+    max-width: 250px;
+    filter: drop-shadow(1px 1px 5px rgba(0, 0, 0, 0.24));
+    
+}
+
+.container-item h2 {
+    color: #303030;
+    font-weight: bold;
+    font-size: 1.5rem;
+    margin-top: 42px;
+    margin-bottom: 22px;
+
+    
+}
+
+.container-item p {
+    display: block;
+    font-weight: bold;
+    font-size: 1.1rem;
+    color: #008540;
+    position: relative;
+    margin-bottom: 12px;
+    margin-top: 16px;
+
+}
+
+.container-item p::before {
+    content: '';
+    display: block;
+    width: 50px;
+    height: 2px;
+    background-color: #d6d6d6;
+    position: absolute;
+    top: -10px;
+    border-radius: 3px;
+
+}
+
+.bebida {
+    color: rgb(88, 88, 88);
+    font-weight: normal;
+
+}
+
+.container-item a {
+    display: block;
+    background-color: #008D44;
+    color: white;
+    box-shadow: 2px 2px 4px #0624002f;
+    padding: 8px 20px;
+    font-size: 1.2rem;
+    font-weight: bold;
+    text-align: center;
+    max-width: 90px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.container-item a:hover {
+    background-color: #0f9b53;
+}
+
+
+
+@media(max-width: 1200px) {
+    .container-grid-cardapio {
+        grid-template-columns: repeat(2, 350px);
+    }
+}
+
+@media(max-width: 780px) {
+    .container-grid-cardapio {
+        grid-template-columns: repeat(2, 300px);
+    }
+}
+
+@media(max-width: 700px) {
+    .container-grid-cardapio {
+        grid-template-columns: 350px;
+    }
+}
+
+@media(max-width: 430px) {
+    .container-grid-cardapio {
+        grid-template-columns: 300px;
+    }
+
+    .container-item {
+        max-width: 250px;
+        padding: 20px;
+        margin: 0 22px 0 auto;
+        
+    }
+
+    .cardapio-titulo, .cardapio-corpo {
+        margin-left: -13px;
+    }
+
+    .cardapio-titulo {
+        font-size: 2.3rem;
+    }
+
+    .cardapio-corpo {
+        font-size: 1rem;
+    }
+
+    .container-item img {
+        max-width: 190px;
+    }
+
+    .container-item:last-child {
+        margin-bottom: 64px;
+    }
+
+}

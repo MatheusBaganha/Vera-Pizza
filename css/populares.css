@@ -63,7 +63,6 @@
     justify-content: space-between;
     align-items: center;
     margin-top: 64px;
-    transform: translateX(-30px);
 }
 
 
@@ -78,6 +77,7 @@
 }
 
 .animar {
+    transform: translateX(-30px);
     animation: slide .3s forwards;
 }
 

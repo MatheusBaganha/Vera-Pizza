@@ -81,17 +81,6 @@
 }
 
 
-@keyframes slide {
-    from {
-        opacity: 0;
-    }
-
-    to {
-        opacity: 1;
-        transform: translateX(0);  
-    }
-}
-
 
 #pizzas {
     padding-bottom: 64px;

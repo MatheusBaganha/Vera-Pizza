@@ -6,6 +6,7 @@
     align-items: center;
 }
 
+
 .container-item {
     border: 1px solid rgba(211, 211, 211, 0.568);
     box-shadow: 1px 1px 3px rgba(39, 39, 39, 0.233);
@@ -14,7 +15,12 @@
     max-width: 260px;
     padding: 30px;
     margin-bottom: 32px;
+    transition: 0.3s;
+    transform: translateX(-30px);
+    animation: slide .3s forwards;    
 }
+
+
 
 .linha-cardapio {
     width: 90px;
@@ -23,6 +29,7 @@
 
 .container-item img {
     max-width: 250px;
+    margin: 0 auto;
     filter: drop-shadow(1px 1px 5px rgba(0, 0, 0, 0.24));
 }
 
@@ -108,6 +115,11 @@
         margin: 0 22px 0 auto;   
     }
 
+    .container-item h2 {
+        margin-top: 22px;
+        margin-bottom: 22px;    
+    }
+
     .cardapio-titulo, .cardapio-corpo {
         margin-left: -13px;
     }
@@ -121,7 +133,9 @@
     }
 
     .container-item img {
-        max-width: 190px;
+        max-width: 180px;
+        margin: 16px;
+        margin-left: 25px;
     }
 
     .container-item:last-child {

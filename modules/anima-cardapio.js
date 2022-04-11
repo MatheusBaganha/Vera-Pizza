@@ -18,7 +18,7 @@ export default function initAnimaCardapio() {
 
     //Elementos que devem ser animados e classe pra animar
     const elementAnimado = document.querySelectorAll('[data-animar]');
-    const animarClasse = 'animar';
+    const animarClasse = 'animarCardapio';
 
     function animeAoScroll() {
         //Formula pro windowTop ser 3/4 da tela, servindo pra todos os dipositivos

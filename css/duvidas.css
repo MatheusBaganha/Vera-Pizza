@@ -71,6 +71,7 @@
     margin-top: 12px;
     transform: translateY(-30px);
     transition: 3s ease-in;
+    max-width: 100ch;
 }
 
 .pergunta, .resposta {

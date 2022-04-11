@@ -17,7 +17,7 @@
     opacity: 0;
 }
 
-[data-animar].animar {
+[data-animar].animarCardapio {
     transition: 0.3s;
     transform: translateX(-64px);
     animation: slide .3s forwards;

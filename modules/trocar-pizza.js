@@ -27,7 +27,7 @@ export default function initTrocarPizza() {
             conteudo.classList.remove('animar');
             setTimeout(() => {
                 conteudo.classList.add('animar');
-            }, 20);
+            }, 30);
         } else {
             conteudo.classList.add('animar');
         }
@@ -38,7 +38,7 @@ export default function initTrocarPizza() {
     function trocarConteudo(conteudo) {
         if(conteudo.currentTarget === circulos[1]) {
             tituloPizza.innerText = 'Pizza Margherita';
-            texto.innerText = 'Sabor ícone da Itália que leva apenas molho, muçarela, tomate e manjericão. É uma ótima opção para quem não come carne.'
+            texto.innerText = 'Sabor ícone da Itália que leva apenas molho, muçarela, tomate e manjericão. É uma ótima opção para quem não come carne.';
             trocaCor('white');
             trocarImg(imagem, 'img/cheese-pizza2.png');
             animarConteudo(animar1);

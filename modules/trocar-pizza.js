@@ -4,7 +4,7 @@ export default function initTrocarPizza() {
     const linha = document.querySelectorAll('[data-linha]');
     const texto = document.querySelector('[data-texto]');
     const imagem = document.querySelector('[data-imagem]');
-    const animar1 = document.querySelector('[data-animar]');
+    const animar1 = document.querySelector('[data-animar1]');
 
 
     //Vai trocar a cor da linha dos dois titulos 

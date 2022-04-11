@@ -6,7 +6,6 @@
     align-items: center;
 }
 
-
 .container-item {
     border: 1px solid rgba(211, 211, 211, 0.568);
     box-shadow: 1px 1px 3px rgba(39, 39, 39, 0.233);
@@ -15,12 +14,14 @@
     max-width: 260px;
     padding: 30px;
     margin-bottom: 32px;
-    transition: 0.3s;
-    transform: translateX(-30px);
-    animation: slide .3s forwards;    
+    opacity: 0;
 }
 
-
+[data-animar].animar {
+    transition: 0.3s;
+    transform: translateX(-64px);
+    animation: slide .3s forwards;
+}
 
 .linha-cardapio {
     width: 90px;

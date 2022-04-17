@@ -1,10 +1,23 @@
 export default function initTrocarPizza() {
+  //  Conteudo do DOM
   const circulos = Array.from(document.querySelectorAll('[data-circulo]'));
   const tituloPizza = document.querySelector('[data-tituloPizza]');
   const texto = document.querySelector('[data-texto]');
   const linhas = document.querySelectorAll('[data-linha]');
   const imagem = document.querySelector('[data-imagem]');
   const animar1 = document.querySelector('[data-animar1]');
+
+  //  Conteudo de texto
+  const margheritaTexto = 'Sabor ícone da Itália que leva apenas molho, muçarela, tomate e manjericão. É uma ótima opção para quem não come carne.';
+
+  const portuguesaTexto = 'Ovos, cebola, azeitona, ervilha, queijo e presunto dão sabor a segunda pizza mais queridinha dos brasileiros.';
+
+  const calabresaTexto = 'A pizza que comemos hoje, redonda com molho de tomate e coberta com queijo, surgiu em Nápoles, Itália, por volta do século 18. Só que a massa em forma de disco assada em forno e com cobertura é uma criação bem mais antiga.'; 
+
+  //  Titulos 
+  const margheritaTitulo = 'Pizza Margherita';
+  const portuguesaTitulo = 'Pizza Portuguesa';
+  const calabresaTitulo = 'Pizza de Calabresa';
 
   //  Vai trocar a cor da linha dos dois titulos
   function trocaCor(cor) {
@@ -30,23 +43,33 @@ export default function initTrocarPizza() {
     }
   }
 
+  //  Troca titulo da pizza
+  function trocarTitulo(tituloModificado) {
+    tituloPizza.innerText = tituloModificado;
+  }
+
+  //  Troca coropo de texto da pizza
+  function trocarTexto(textoModificado) {
+    texto.innerText = textoModificado;
+  }
+
   //  Troca todo o conteudo sobre as pizzas de acordo com o circulo que foi clicado
   function trocarConteudo(conteudo) {
     if (conteudo.currentTarget === circulos[1]) {
-      tituloPizza.innerText = 'Pizza Margherita';
-      texto.innerText = 'Sabor ícone da Itália que leva apenas molho, muçarela, tomate e manjericão. É uma ótima opção para quem não come carne.';
+      trocarTitulo(margheritaTitulo);
+      trocarTexto(margheritaTexto);
       trocaCor('white');
       trocarImg(imagem, 'img/cheese-pizza2.png');
       animarConteudo(animar1);
     } else if (conteudo.currentTarget === circulos[2]) {
-      tituloPizza.innerText = 'Pizza Portuguesa';
-      texto.innerText = 'Ovos, cebola, azeitona, ervilha, queijo e presunto dão sabor a segunda pizza mais queridinha dos brasileiros.';
+      trocarTitulo(portuguesaTitulo);
+      trocarTexto(portuguesaTexto);
       trocaCor('#CE3C4D');
       trocarImg(imagem, 'img/cheese-pizza3.png');
       animarConteudo(animar1);
     } else {
-      tituloPizza.innerText = 'Pizza de Calabresa';
-      texto.innerText = 'A pizza que comemos hoje, redonda com molho de tomate e coberta com queijo, surgiu em Nápoles, Itália, por volta do século 18. Só que a massa em forma de disco assada em forno e com cobertura é uma criação bem mais antiga.';
+      trocarTitulo(calabresaTitulo);
+      trocarTexto(calabresaTexto);
       trocaCor('#008D44');
       trocarImg(imagem, 'img/pizza-calabresa.png');
       animarConteudo(animar1);

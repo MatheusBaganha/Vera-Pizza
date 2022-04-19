@@ -1,20 +1,5 @@
+import debounce from "./debounce.js";
 export default function initAnimaCardapio() {
-  //  Debounce do Lodash, serve pra nao ativar a função de scroll varias vezes desnecessariamente
-  const debounce = function (func, wait, immediate) {
-    let timeout;
-    return function (...args) {
-      const context = this;
-      const later = function () {
-        timeout = null;
-        if (!immediate) func.apply(context, args);
-      };
-      const callNow = immediate && !timeout;
-      clearTimeout(timeout);
-      timeout = setTimeout(later, wait);
-      if (callNow) func.apply(context, args);
-    };
-  };
-
   //  Elementos que devem ser animados e classe pra animar
   const elementAnimado = document.querySelectorAll('[data-animar]');
   const animarClasse = 'animarCardapio';

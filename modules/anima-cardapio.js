@@ -23,6 +23,6 @@ export default function initAnimaCardapio() {
   if (elementAnimado.length) {
     window.addEventListener('scroll', debounce(() => {
       animeAoScroll();
-    }, 100));
+    }, 300));
   }
 }
